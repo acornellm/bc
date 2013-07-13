@@ -10,13 +10,15 @@
  * @since Twenty Twelve 1.0
  */
 ?>
-	</div><!-- #main .wrapper -->
-	<footer id="colophon" role="contentinfo">
-		<div class="site-info">
-			<?php do_action( 'twentytwelve_credits' ); ?>
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentytwelve' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentytwelve' ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentytwelve' ), 'WordPress' ); ?></a>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+    </div><!-- #main .wrapper -->
+    <footer id="colophon" role="contentinfo">
+        <div class="site-info">
+            <p>&copy;2013 Need Info Here. All Rights Reserved.</p>
+            <p>
+                <a href="http://www.goldenmarketingllc.com" target="_blank">Website Design by Golden Marketing LLC</a>
+            </p>
+        </div><!-- .site-info -->
+    </footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
