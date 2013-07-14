@@ -108,6 +108,19 @@ img {
     -ms-interpolation-mode: bicubic;
 }
 
+/* Custom Fonts
+-------------------------------------------------------------- */
+@font-face {
+    font-family: 'umbrageregular';
+    src: url('fonts/umbrage2-webfont.eot');
+    src: url('fonts/umbrage2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/umbrage2-webfont.woff') format('woff'),
+         url('fonts/umbrage2-webfont.ttf') format('truetype'),
+         url('fonts/umbrage2-webfont.svg#umbrageregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 /* =Repeatable patterns
 -------------------------------------------------------------- */
