@@ -283,14 +283,11 @@ a:hover {
 .banner {
     height: 110px;
 }
-.banner div {
-    float: left;
-    position: relative;
-}
 .logo {
-    width: 760px;
+    float: left;
 }
 .company-info {
+    float: right;
     padding: 10px 0 0 50px;
 }
 .location-info {
