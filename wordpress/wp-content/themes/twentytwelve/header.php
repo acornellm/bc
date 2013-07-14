@@ -34,9 +34,17 @@
 <body>
 <div id="page" class="site">
 	<header id="masthead" class="site-header" role="banner">
+        <div class="banner">
+            <div class="logo"><a href="<?php echo esc_url( site_url() ); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.png" alt="" height="100px" width="279px"/></a></div>
+            <div class="location-info">
+                <p>1224 Washington Ave<br />
+Ste 135<br />
+Golden, CO 80401<br />
+303-271-0730</p>
+            </div>
+        </div>	
 		
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-            <div class="logo"><a href="<?php echo esc_url( site_url() ); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.png" alt="" height="89px" width="250px"/></a></div>
 			<h3 class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></h3>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
 		</nav><!-- #site-navigation -->

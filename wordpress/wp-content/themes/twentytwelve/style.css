@@ -280,6 +280,21 @@ a:hover {
 }
 
 /* Page structure */
+.banner {
+    height: 110px;
+}
+.banner div {
+    float: left;
+    position: relative;
+}
+.logo {
+    width: 750px;
+}
+.location-info {
+    font-family: 'umbrageregular', Helvetica, Arial, sans-serif;
+    padding-top: 10px;
+    padding-left: 80px;
+}
 .site {
 }
 .site-content {
@@ -290,10 +305,9 @@ a:hover {
 }
 .content-background {
     background: #e6e6e6;
-    opacity: 0.9;
+    opacity: 0.93;
     -moz-border-radius: 8px;
     border-radius: 8px;
-    
     position: absolute;
     width: 100%;
     height: 100%;
@@ -306,8 +320,6 @@ a:hover {
 }
 
 /* Navigation Menu */
-.logo {
-}
 .main-navigation {
     position: absolute;
 }
@@ -390,7 +402,7 @@ footer[role="contentinfo"] a:hover {
 .entry-content {
     padding: 10px;
     position: absolute;
-    height: 96%;
+    height: 470px;
     overflow: auto;
     z-index: 2;
 }
@@ -619,7 +631,7 @@ footer.entry-meta {
         width: 80%;
     }
     .wrapper {
-        padding: 40px 0 0 80px;
+        padding: 0px 0 0 90px;
     }
     .site {
         margin: 0 auto;
@@ -838,7 +850,7 @@ footer.entry-meta {
 /* Minimum width of 980 pixels. */
 @media screen and (min-width: 980px) {
     body .site {
-        margin-top: 95px;
+        margin-top: 10px;
         margin-bottom: 45px;        
     }
 }
