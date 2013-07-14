@@ -288,12 +288,32 @@ a:hover {
     position: relative;
 }
 .logo {
-    width: 750px;
+    width: 760px;
+}
+.company-info {
+    padding: 10px 0 0 50px;
 }
 .location-info {
+}
+.location-info p {
     font-family: 'umbrageregular', Helvetica, Arial, sans-serif;
-    padding-top: 10px;
-    padding-left: 80px;
+    font-size: 16px;
+}
+.social {
+    clear: both;
+}
+.social ul li {
+    float: left;
+    width: 25px;
+    height: 25px;
+}
+.social a {
+    width: 25px;
+    height: 25px;
+    display: block;
+}
+.facebook a {
+    background: url("images/icon-facebook.png") no-repeat scroll center center transparent;
 }
 .site {
 }

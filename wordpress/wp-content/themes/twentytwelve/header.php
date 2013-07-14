@@ -36,11 +36,18 @@
 	<header id="masthead" class="site-header" role="banner">
         <div class="banner">
             <div class="logo"><a href="<?php echo esc_url( site_url() ); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.png" alt="" height="100px" width="279px"/></a></div>
-            <div class="location-info">
-                <p>1224 Washington Ave<br />
+            <div class="company-info">
+                <div class="location-info">
+                    <p>1224 Washington Ave<br />
 Ste 135<br />
 Golden, CO 80401<br />
 303-271-0730</p>
+                </div>
+                <div class="social">
+                    <ul>
+                       <li class="facebook"><a title="Facebook" href="https://www.facebook.com/pages/Blue-Canyon-Bar-Grill/111667252204567?fref=ts" target="_blank" rel="nofollow"></a></li>
+                    </ul>
+                </div>
             </div>
         </div>	
 		
