@@ -121,7 +121,6 @@ img {
     font-style: normal;
 }
 
-
 /* =Repeatable patterns
 -------------------------------------------------------------- */
 
@@ -284,12 +283,15 @@ a:hover {
 .site {
 }
 .site-content {
-    padding: 20px 20px 20px 145px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url('images/underground-bg.jpg');
+    padding: 25px 25px 25px 140px;
 }
 #content {
     min-height: 490px;
     background: #e6e6e6;
-    opacity: 1.0;
+    opacity: 0.9;
     -moz-border-radius: 8px;
     border-radius: 8px;
     color: #000;
@@ -393,6 +395,7 @@ footer[role="contentinfo"] a:hover {
 .entry-content h6 {
     margin: 24px 0;
     line-height: 1.714285714;
+    font-family: 'umbrageregular', Helvetica, Arial, sans-serif;
 }
 .entry-content h1 {
     font-size: 21px;
@@ -613,9 +616,9 @@ footer.entry-meta {
     .site-content {
         -moz-border-radius: 8px;
         border-radius: 8px;
-        box-shadow: 0 0 6px 6px rgba(20, 190, 255, 0.8);
-        -moz-box-shadow:0 0 6px 6px rgba(20, 190, 255, 0.8);
-        -webkit-box-shadow:0 0 6px 6px rgba(20, 190, 255, 0.8);
+        box-shadow: 0 0 6px 6px #2a92db;
+        -moz-box-shadow:0 0 6px 6px #2a92db;
+        -webkit-box-shadow:0 0 6px 6px #2a92db;
     }
     body.template-front-page .site-content,
     body.single-attachment .site-content,
