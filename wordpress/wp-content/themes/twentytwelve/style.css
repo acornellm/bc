@@ -315,25 +315,13 @@ a:hover {
 .site {
 }
 .site-content {
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-image: url('images/underground-bg.jpg');
-    padding: 25px 25px 25px 140px;
-}
-.content-background {
-    background: #e6e6e6;
-    opacity: 0.93;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
+   padding: 20px 20px 20px 145px;
 }
 #content {
-    min-height: 490px;
+    background: rgba(230,230,230,0.85); /*#e6e6e6;*/
+    -moz-border-radius: 8px;
+    border-radius: 8px;
     color: #000;
-    position: relative;
 }
 
 /* Navigation Menu */
@@ -418,10 +406,8 @@ footer[role="contentinfo"] a:hover {
 }
 .entry-content {
     padding: 10px;
-    position: absolute;
     height: 470px;
     overflow: auto;
-    z-index: 2;
 }
 .entry-content,
 .entry-summary,
@@ -637,8 +623,8 @@ footer.entry-meta {
 /* =Media queries
 -------------------------------------------------------------- */
 
-/* Minimum width of 600 pixels. */
-@media screen and (min-width: 600px) {
+/* Minimum width of 784 pixels. */
+@media screen and (min-width: 784px) {
     .author-avatar {
         float: left;
         margin-top: 8px;
@@ -655,6 +641,9 @@ footer.entry-meta {
         max-width: 980px;
     }
     .site-content {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url('images/underground-bg.jpg');
         -moz-border-radius: 8px;
         border-radius: 8px;
         box-shadow: 0 0 6px 6px #2a92db;
