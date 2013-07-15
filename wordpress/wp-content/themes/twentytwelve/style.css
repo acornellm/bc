@@ -327,6 +327,7 @@ a:hover {
 /* Navigation Menu */
 .main-navigation {
     position: absolute;
+    margin-top: 22px;
 }
 .main-navigation li {
     margin-top: 24px;
@@ -406,7 +407,7 @@ footer[role="contentinfo"] a:hover {
 }
 .entry-content {
     padding: 10px;
-    height: 470px;
+    height: 585px;
     overflow: auto;
 }
 .entry-content,
