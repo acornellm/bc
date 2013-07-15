@@ -35,11 +35,10 @@
 <div id="page" class="site">
 	<header id="masthead" class="site-header" role="banner">
         <div class="banner">
-            <div class="logo"><a href="<?php echo esc_url( site_url() ); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.png" alt="" height="100px" width="279px"/></a></div>
+            <div class="logo"><a href="<?php echo esc_url( site_url() ); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo2.png" alt="" height="150px" width="418px"/></a></div>
             <div class="company-info">
                 <div class="location-info">
                     <p>1224 Washington Ave<br />
-Ste 135<br />
 Golden, CO 80401<br />
 303-271-0730</p>
                 </div>

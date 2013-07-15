@@ -281,20 +281,21 @@ a:hover {
 
 /* Page structure */
 .banner {
-    height: 110px;
+    height: 160px;
 }
 .logo {
     float: left;
 }
 .company-info {
     float: right;
-    padding: 10px 0 0 50px;
+    padding: 35px 0 0 50px;
 }
 .location-info {
+    margin-bottom: 7px;
 }
 .location-info p {
     font-family: 'umbrageregular', Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 21px;
 }
 .social {
     clear: both;
@@ -315,7 +316,7 @@ a:hover {
 .site {
 }
 .site-content {
-   padding: 20px 20px 20px 145px;
+   padding: 25px 25px 25px 140px;
 }
 #content {
     background: rgba(230,230,230,0.85); /*#e6e6e6;*/
@@ -327,6 +328,7 @@ a:hover {
 /* Navigation Menu */
 .main-navigation {
     position: absolute;
+    margin-top: 22px;
 }
 .main-navigation li {
     margin-top: 24px;
@@ -406,7 +408,7 @@ footer[role="contentinfo"] a:hover {
 }
 .entry-content {
     padding: 10px;
-    height: 470px;
+    height: 585px;
     overflow: auto;
 }
 .entry-content,
@@ -857,7 +859,7 @@ footer.entry-meta {
 @media screen and (min-width: 980px) {
     body .site {
         margin-top: 10px;
-        margin-bottom: 45px;        
+        margin-bottom: 25px;        
     }
 }
 
