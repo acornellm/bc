@@ -1,3 +1,19 @@
+/*
+Theme Name: Twenty Twelve
+Theme URI: http://wordpress.org/extend/themes/twentytwelve
+Author: the WordPress team
+Author URI: http://wordpress.org/
+Description: The 2012 theme for WordPress is a fully responsive theme that looks great on any device. Features include a front page template with its own widgets, an optional display font, styling for post formats on both index and single views, and an optional no-sidebar page template. Make it yours with a custom menu, header image, and background.
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, gray, white, one-column, two-columns, right-sidebar, flexible-width, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: twentytwelve
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
 /* =Reset
 -------------------------------------------------------------- */
 
@@ -12,12 +28,10 @@ body {
     line-height: 1;
     background-color: #000;
 }
-ol,
-ul {
+ol, ul { 
     list-style: none;
 }
-blockquote,
-q {
+blockquote, q {
     quotes: none;
 }
 blockquote:before,
@@ -31,18 +45,11 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-caption,
-th,
-td {
+caption, th, td {
     font-weight: normal;
     text-align: left;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     clear: both;
 }
 html {
@@ -54,21 +61,10 @@ html {
 a:focus {
     outline: thin dotted;
 }
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section {
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
     display: block;
 }
-audio,
-canvas,
-video {
+audio, canvas, video {
     display: inline-block;
 }
 audio:not([controls]) {
@@ -87,8 +83,7 @@ hr {
     height: 1px;
     margin: 24px;
 }
-sub,
-sup {
+sub, sup {
     font-size: 75%;
     line-height: 0;
     position: relative;
@@ -108,7 +103,7 @@ img {
     -ms-interpolation-mode: bicubic;
 }
 
-/* Custom Fonts
+/* =Custom Fonts
 -------------------------------------------------------------- */
 @font-face {
     font-family: 'umbrageregular';
@@ -123,6 +118,29 @@ img {
 
 /* =Repeatable patterns
 -------------------------------------------------------------- */
+
+/* Small headers */
+.archive-title,
+.page-title,
+.widget-title,
+.entry-content th,
+.comment-content th {
+    font-size: 11px;
+    font-size: 0.785714286rem;
+    line-height: 2.181818182;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #636363;
+}
+
+/* Shared Post Format styling */
+article.format-quote footer.entry-meta,
+article.format-link footer.entry-meta,
+article.format-status footer.entry-meta {
+    font-size: 11px;
+    font-size: 0.785714286rem;
+    line-height: 2.181818182;
+}
 
 /* Form fields, general styles first */
 button,
@@ -280,17 +298,35 @@ a:hover {
 }
 
 /* Page structure */
+.site {
+}
+.site-content {
+    padding: 0 0 5px 60px;
+}
+.site-content article {
+    background: rgba(245,245,245,0.88); /*#f5f5f5;*/
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    color: #000;
+}
 .banner {
-    height: 160px;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 10px;
 }
 .logo {
     float: left;
+}
+.logo img {
+    height: 150px;
+    width: auto;
 }
 .company-info {
     float: right;
     padding: 25px 0 0 50px;
 }
 .location-info {
+    text-align: right;
     margin-bottom: 7px;
 }
 .location-info p {
@@ -302,7 +338,7 @@ a:hover {
     clear: both;
 }
 .social ul li {
-    float: left;
+    float: right;
     width: 25px;
     height: 25px;
 }
@@ -313,17 +349,6 @@ a:hover {
 }
 .facebook a {
     background: url("images/icon-facebook.png") no-repeat scroll center center transparent;
-}
-.site {
-}
-.site-content {
-   padding: 25px 25px 25px 140px;
-}
-#content {
-    background: rgba(230,230,230,0.85); /*#e6e6e6;*/
-    -moz-border-radius: 8px;
-    border-radius: 8px;
-    color: #000;
 }
 
 /* Navigation Menu */
@@ -592,17 +617,6 @@ img.aligncenter {
     border-top: 1px solid #ededed;
     padding: 6px 10px 6px 0;
 }
-.site-content article {
-    border-bottom: 4px double #ededed;
-    margin-bottom: 72px;
-    margin-bottom: 5.142857143rem;
-    padding-bottom: 24px;
-    padding-bottom: 1.714285714rem;
-    word-wrap: break-word;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    hyphens: auto;
-}
 .page-links {
     clear: both;
     line-height: 1.714285714;
@@ -626,16 +640,18 @@ footer.entry-meta {
 /* =Media queries
 -------------------------------------------------------------- */
 
-/* Minimum width of 784 pixels. */
-@media screen and (min-width: 784px) {
-    .author-avatar {
-        float: left;
-        margin-top: 8px;
+/* Desktop
+   Minimum width of 980 pixels. */
+@media screen and (min-width: 980px) {
+    body .site {
+        margin-top: 10px;
+        margin-bottom: 25px;        
     }
-    .author-description {
-        float: right;
-        width: 80%;
-    }
+}
+
+/* Portrait tablet to lanscape and desktop
+   Minimum width of 768 pixels. */
+@media screen and (min-width: 768px) {
     .wrapper {
         padding: 0px 0 0 90px;
     }
@@ -652,6 +668,7 @@ footer.entry-meta {
         box-shadow: 0 0 6px 6px #2a92db;
         -moz-box-shadow:0 0 6px 6px #2a92db;
         -webkit-box-shadow:0 0 6px 6px #2a92db;
+        padding: 25px 25px 25px 140px;
     }
     body.template-front-page .site-content,
     body.single-attachment .site-content,
@@ -690,7 +707,6 @@ footer.entry-meta {
         display: block;
         line-height: 55px;
         width: 210px;
-        
         color: #bbb;
         text-transform: uppercase;
         white-space: nowrap;
@@ -856,11 +872,28 @@ footer.entry-meta {
     }
 }
 
-/* Minimum width of 980 pixels. */
-@media screen and (min-width: 980px) {
-    body .site {
-        margin-top: 10px;
-        margin-bottom: 25px;        
+/* Landscape phones and down
+   Minimum width of 980 pixels. */
+@media screen and (max-width: 480px) {
+    .logo img {
+        height: 90px;
+        width: auto;
+    }
+    .company-info {
+        padding: 15px 0 0 0;
+    }
+    .location-info {
+        margin-bottom: 0;
+    }
+    .social {
+        display: none;
+    }
+    .location-info p {
+        font-family: 'umbrageregular', Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .banner {
     }
 }
 
@@ -880,6 +913,10 @@ footer.entry-meta {
     }
     a {
         text-decoration: none;
+    }
+    .logo img {
+        height: 100px;
+        width: auto;
     }
     .entry-content img,
     .comment-content img,

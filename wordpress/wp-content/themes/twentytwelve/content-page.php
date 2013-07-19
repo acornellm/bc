@@ -7,8 +7,8 @@
  * @since Twenty Twelve 1.0
  */
 ?>
-
-    <div class="entry-content">
-        <?php the_content(); ?>
-        <?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'twentytwelve' ), 'after' => '</div>' ) ); ?>
-    </div><!-- .entry-content -->
+    <article>
+	    <div class="entry-content">
+	        <?php the_content(); ?>
+	    </div><!-- .entry-content -->
+    </article>
