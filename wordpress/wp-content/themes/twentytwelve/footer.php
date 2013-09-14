@@ -13,7 +13,7 @@
     </div><!-- #main .wrapper -->
     <footer id="colophon" role="contentinfo">
         <div class="site-info">
-            <p>&copy;2013 Need Info Here. All Rights Reserved.</p>
+            <p>&copy;2013 Blue Canyon Grill. All Rights Reserved.</p>
             <p>
                 <a href="http://www.goldenmarketingllc.com" target="_blank">Website Design by Golden Marketing LLC</a>
             </p>

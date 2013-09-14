@@ -27,6 +27,7 @@
 <?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/css3-mediaqueries.js" type="text/javascript"></script>
 <![endif]-->
 <?php wp_head(); ?>
 </head>
@@ -35,7 +36,7 @@
 <div id="page" class="site">
 	<header id="masthead" class="site-header" role="banner">
         <div class="banner">
-            <div class="logo"><a href="<?php echo esc_url( site_url() ); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo2.png" /></a></div>
+            <div class="logo"><a href="<?php echo esc_url( site_url() ); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.png" /></a></div>
             <div class="company-info">
                 <div class="location-info">
                     <p>1224 Washington Ave<br />
@@ -44,7 +45,7 @@ Golden, CO 80401<br />
                 </div>
                 <div class="social">
                     <ul>
-                       <li class="facebook"><a title="Facebook" href="https://www.facebook.com/pages/Blue-Canyon-Bar-Grill/111667252204567?fref=ts" target="_blank" rel="nofollow"></a></li>
+                       <li class="facebook"><a title="Facebook" href="https://www.facebook.com/blue.canyon.5?fref=ts&ref=br_tf" target="_blank" rel="nofollow"></a></li>
                     </ul>
                 </div>
             </div>
