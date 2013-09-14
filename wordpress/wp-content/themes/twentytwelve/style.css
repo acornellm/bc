@@ -773,10 +773,10 @@ div.formBuilderFailure {
 /* =Custom scrollbar (Chrome browsers)
 -------------------------------------------------------------- */
 ::-webkit-scrollbar {
-	width: 8px;
+	width: 6px;
 }
 ::-webkit-scrollbar-button {
-	width: 8px;
+	width: 6px;
 	height:5px;
 }
 ::-webkit-scrollbar-track {
@@ -831,10 +831,10 @@ div.formBuilderFailure {
     .site-content article {
         background: rgba(245,245,245,0.83); /*#f5f5f5;*/
 		padding: 10px;
+		height: 585px;
+        overflow: auto;
     }
     .entry-content {
-        height: 585px;
-        overflow: auto;
     }
     body.template-front-page .site-content,
     body.single-attachment .site-content,
@@ -1049,7 +1049,7 @@ div.formBuilderFailure {
    Minimum width of 980 pixels. */
 @media screen and (max-width: 480px) {
     .site-content article {
-        background: #f5f5f5;
+        background: #f5f5f5;		
     }
     .logo img {
         height: 90px;
