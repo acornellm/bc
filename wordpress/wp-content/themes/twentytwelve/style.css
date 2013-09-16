@@ -798,8 +798,7 @@ div.formBuilderFailure {
    Minimum width of 980 pixels. */
 @media screen and (min-width: 980px) {
     body .site {
-        margin-top: 10px;
-        margin-bottom: 25px;        
+        margin-bottom: 10px;        
     }
 	
 	.site-content {
